@@ -1,22 +1,23 @@
 
 # react-native-appay-mir
+![npm](https://img.shields.io/npm/dw/react-native-appay-mir.svg?style=flat-square)
+[![npm (tag)](https://img.shields.io/npm/v/react-native-appay-mir/latest.svg?style=flat-square)](https://github.com/busfor/react-native-apay/tree/master)
 
 It is forked from [react-native-apay](https://github.com/sorokin0andrey/react-native-apay) with extended by Payment Network (MIR)
 _added russian payment network МИР._
 
-<img width="280px" src="doc/img.png" />
-
 Accept Payments with Apple Pay for React Native apps.
 
-<div>
-<img width="280px" src="doc/simulator.gif" />
+<div style="gap: 10%; display: flex; justify-content: center">
+<img width="280px" src="doc/img.png" />
+<img width="170px" src="doc/simulator.gif" />
 </div>
 
 ---
 
 ## Getting started
 
-`$ yarn add react-native-apay`
+`$ yarn add react-native-appay-mir`
 
 ## Linking 
 
@@ -28,14 +29,14 @@ Autolinking will just do the job.
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-apay`
+`$ react-native link react-native-appay-mir`
 
 ### CocoaPods
 
 Link using [Cocoapods](https://cocoapods.org) by adding this to your `Podfile`:
 
 ```ruby
-pod 'RNApplePay', :path => '../node_modules/react-native-apay'
+pod 'RNApplePayMir', :path => '../node_modules/react-native-appay-mir'
 ```
 
 ### Manual installation
@@ -44,20 +45,20 @@ pod 'RNApplePay', :path => '../node_modules/react-native-apay'
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-apay` and add `RNApplePay.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNApplePay.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
+2. Go to `node_modules` ➜ `react-native-appay-mir` and add `RNApplePayMir.xcodeproj`
+3. In XCode, in the project navigator, select your project. Add `libRNApplePayMir.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
 
 ## Usage
 ```javascript
-import { ApplePay } from 'react-native-apay';
+import { ApplePay } from 'react-native-appay-mir';
 
 const requestData = {
   merchantIdentifier: 'merchant.com.example',
-  supportedNetworks: ['mastercard', 'visa'],
-  countryCode: 'US',
-  currencyCode: 'USD',
+  supportedNetworks: ['mastercard', 'visa', 'mir'],
+  countryCode: 'RU',
+  currencyCode: 'RUB',
   paymentSummaryItems: [
     {
       label: 'Item label',
