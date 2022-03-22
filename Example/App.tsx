@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
-import { ApplePay, APayRequestDataType, APayPaymentStatusType } from 'react-native-apay'
+import { ApplePay, APayRequestDataType, APayPaymentStatusType } from 'react-native-appay-mir'
 
 const requestData: APayRequestDataType = {
   merchantIdentifier: 'merchant.com.payture.applepay.Busfor',
-  supportedNetworks: ['mastercard', 'visa'],
+  supportedNetworks: ['mastercard', 'visa', 'mir'],
   countryCode: 'US',
   currencyCode: 'USD',
   paymentSummaryItems: [
