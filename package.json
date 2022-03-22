@@ -1,0 +1,32 @@
+{
+  "name": "react-native-appay-mir",
+  "version": "1.0.0",
+  "description": "For of react-native-appay with MIR payments network support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo": "cd ./Example && yarn && cd ios && pod install && cd .. && yarn start && react-native run-ios"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mav10/react-native-applepay-mir.git"
+  },
+  "keywords": [
+    "react-native",
+    "apple-pay",
+    "payments",
+    "pay",
+    "mir",
+    "МИР"
+  ],
+  "author": "Maxim Vasin <maxim.vasin@mail.ru> (https://github.com/mav10)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mav10/react-native-applepay-mir/issues"
+  },
+  "homepage": "https://github.com/mav10/react-native-applepay-mir#readme",
+  "peerDependencies": {
+    "react-native": ">=0.41.2"
+  },
+  "nativePackage": true
+}
