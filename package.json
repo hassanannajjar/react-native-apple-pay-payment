@@ -1,6 +1,6 @@
 {
   "name": "react-native-appay-mir",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "For of react-native-appay with MIR payments network support",
   "main": "index.js",
   "scripts": {

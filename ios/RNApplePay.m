@@ -95,7 +95,7 @@ RCT_EXPORT_METHOD(complete:(NSNumber *_Nonnull)status promiseWithResolver:(RCTPr
     }
 
     if (@available(iOS 14.5, *)) {
-        [supportedNetworksMapping setObject:PKPaymentNetworkMaestro forKey:@"mir"];
+        [supportedNetworksMapping setObject:PKPaymentNetworkMir forKey:@"mir"];
     }
 
     NSArray *supportedNetworksProp = props[@"supportedNetworks"];
