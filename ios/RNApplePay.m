@@ -94,6 +94,10 @@ RCT_EXPORT_METHOD(complete:(NSNumber *_Nonnull)status promiseWithResolver:(RCTPr
         [supportedNetworksMapping setObject:PKPaymentNetworkMaestro forKey:@"maestro"];
     }
     
+    if (@available(iOS 12.2, *)) {
+        [supportedNetworksMapping setObject:PKPaymentNetworkMada forKey:@"mada"];
+    }
+    
     if (@available(iOS 14.5, *)) {
         [supportedNetworksMapping setObject:PKPaymentNetworkMir forKey:@"mir"];
     }

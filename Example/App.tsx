@@ -4,7 +4,7 @@ import { ApplePay, APayRequestDataType, APayPaymentStatusType } from 'react-nati
 
 const requestData: APayRequestDataType = {
   merchantIdentifier: 'merchant.com.payture.applepay.Busfor',
-  supportedNetworks: ['mastercard', 'visa', 'mir'],
+  supportedNetworks: ['mastercard', 'visa', 'mada', 'mir'],
   countryCode: 'US',
   currencyCode: 'USD',
   paymentSummaryItems: [
