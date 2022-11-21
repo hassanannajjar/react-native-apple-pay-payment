@@ -1,6 +1,6 @@
 {
   "name": "react-native-appay-mir",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "For of react-native-appay with MIR payments network support",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,8 @@
   },
   "homepage": "https://github.com/mav10/react-native-applepay-mir#readme",
   "peerDependencies": {
-    "react-native": ">=0.41.2"
+    "react": "*",
+    "react-native": "*"
   },
   "nativePackage": true
 }
