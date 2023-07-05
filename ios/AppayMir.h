@@ -1,4 +1,4 @@
-@import PassKit;
+#include <PassKit/PassKit.h>
 
 #ifdef RCT_NEW_ARCH_ENABLED
 #import "RNAppayMirSpec.h"
@@ -7,7 +7,7 @@
 #else
 #import <React/RCTBridgeModule.h>
 
-@interface AppayMir : NSObject <RCTBridgeModuleб PKPaymentAuthorizationViewControllerDelegate>
+@interface AppayMir : NSObject <RCTBridgeModule, PKPaymentAuthorizationViewControllerDelegate>
 
 @property (nonatomic, strong) PKPaymentAuthorizationViewController * _Nullable viewController;
 

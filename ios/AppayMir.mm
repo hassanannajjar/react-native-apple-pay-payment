@@ -4,6 +4,27 @@
 @implementation AppayMir
 RCT_EXPORT_MODULE()
 
+- (dispatch_queue_t)methodQueue
+{
+    return dispatch_get_main_queue();
+}
+
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
+}
+
+
+- (NSDictionary *)constantsToExport
+{
+    return @{
+             @"canMakePayments": @([PKPaymentAuthorizationViewController canMakePayments]),
+             @"SUCCESS": @(PKPaymentAuthorizationStatusSuccess),
+             @"FAILURE": @(PKPaymentAuthorizationStatusFailure),
+             @"DISMISSED_ERROR": @"DISMISSED_ERROR",
+             };
+}
+
 RCT_EXPORT_METHOD(requestPayment:(NSDictionary *)props promiseWithResolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     PKPaymentRequest *paymentRequest = [[PKPaymentRequest alloc] init];
     paymentRequest.merchantCapabilities = PKMerchantCapability3DS;
@@ -133,27 +154,5 @@ RCT_EXPORT_METHOD(complete:(NSNumber *_Nonnull)status promiseWithResolver:(RCTPr
     return std::make_shared<facebook::react::NativeAppayMirSpecJSI>(params);
 }
 #endif
-
-
-- (dispatch_queue_t)methodQueue
-{
-    return dispatch_get_main_queue();
-}
-
-+ (BOOL)requiresMainQueueSetup
-{
-    return YES;
-}
-
-
-- (NSDictionary *)constantsToExport
-{
-    return @{
-             @"canMakePayments": @([PKPaymentAuthorizationViewController canMakePayments]),
-             @"SUCCESS": @(PKPaymentAuthorizationStatusSuccess),
-             @"FAILURE": @(PKPaymentAuthorizationStatusFailure),
-             @"DISMISSED_ERROR": @"DISMISSED_ERROR",
-             };
-}
 
 @end
