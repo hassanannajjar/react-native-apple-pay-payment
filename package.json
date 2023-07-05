@@ -1,6 +1,6 @@
 {
   "name": "react-native-appay-mir",
-  "version": "0.1.5",
+  "version": "2.0.0",
   "description": "Fork of `react-native-appay` with MIR payments network support",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
