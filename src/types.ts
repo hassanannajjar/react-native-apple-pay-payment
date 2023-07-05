@@ -26,3 +26,11 @@ export type APayRequestDataType = {
   currencyCode: string;
   paymentSummaryItems: APayPaymentSummaryItemType[];
 };
+
+export type ApplePayModuleProps = {
+  SUCCESS: APayPaymentStatusType;
+  FAILURE: APayPaymentStatusType;
+  canMakePayments: boolean;
+  requestPayment: (requestData: APayRequestDataType) => Promise<string>;
+  complete: (status: APayPaymentStatusType) => Promise<void>;
+};

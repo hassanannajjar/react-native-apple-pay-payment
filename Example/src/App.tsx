@@ -20,8 +20,6 @@ const requestData: APayRequestDataType = {
 };
 
 export const App = () => {
-  console.log('Apppay: ', JSON.stringify(ApplePay));
-
   const payWithApplePay = useCallback((status: APayPaymentStatusType) => {
     // Check if ApplePay is available
     if (ApplePay.canMakePayments) {
