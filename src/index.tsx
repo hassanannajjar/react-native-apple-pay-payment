@@ -1,5 +1,5 @@
 import { NativeModules, Platform } from 'react-native';
-import type { APayPaymentStatusType, APayRequestDataType } from './types';
+import { APayPaymentStatusType, APayRequestDataType } from './types';
 
 const LINKING_ERROR =
   `The package 'react-native-appay-mir' doesn't seem to be linked. Make sure: \n\n` +
