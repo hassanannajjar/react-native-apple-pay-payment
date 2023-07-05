@@ -1,6 +1,6 @@
 {
   "name": "react-native-appay-mir",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "description": "Fork of `react-native-appay` with MIR payments network support",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -10,7 +10,6 @@
   "files": [
     "src",
     "lib",
-    "android",
     "ios",
     "cpp",
     "*.podspec",
@@ -34,12 +33,18 @@
     "release": "release-it",
     "example": "yarn --cwd example",
     "bootstrap": "yarn example && yarn install && yarn example pods",
-    "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build"
+    "clean": "del-cli example/android/build example/android/app/build example/ios/build"
   },
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "apple",
+    "apple pay",
+    "pay",
+    "wireless",
+    "mir",
+    "МИР",
+    "payment"
   ],
   "repository": "https://github.com/mav10/react-native-applepay-mir",
   "author": "maxim vasin <maxim.vasin@mail.ru> (https://github.com/mav10)",
