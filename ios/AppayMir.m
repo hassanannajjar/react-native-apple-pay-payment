@@ -2,18 +2,7 @@
 #import <React/RCTUtils.h>
 
 @implementation AppayMir
-RCT_EXPORT_MODULE()
-
-- (dispatch_queue_t)methodQueue
-{
-    return dispatch_get_main_queue();
-}
-
-+ (BOOL)requiresMainQueueSetup
-{
-    return YES;
-}
-
+RCT_EXPORT_MODULE(AppayMir)
 
 - (NSDictionary *)constantsToExport
 {
@@ -154,5 +143,17 @@ RCT_EXPORT_METHOD(complete:(NSNumber *_Nonnull)status promiseWithResolver:(RCTPr
     return std::make_shared<facebook::react::NativeAppayMirSpecJSI>(params);
 }
 #endif
+
+
+- (dispatch_queue_t)methodQueue
+{
+    return dispatch_get_main_queue();
+}
+
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
+}
+
 
 @end
