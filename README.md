@@ -56,7 +56,7 @@ import { ApplePay } from 'react-native-appay-mir';
 
 const requestData = {
   merchantIdentifier: 'merchant.com.example',
-  supportedNetworks: ['mastercard', 'visa', 'mir'],
+  supportedNetworks: ['mastercard', 'visa', 'mir', 'mada'],
   countryCode: 'RU',
   currencyCode: 'RUB',
   paymentSummaryItems: [

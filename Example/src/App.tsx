@@ -8,7 +8,7 @@ import type {
 
 const requestData: APayRequestDataType = {
   merchantIdentifier: 'merchant.com.mav10.example',
-  supportedNetworks: ['mastercard', 'visa', 'mir'],
+  supportedNetworks: ['mastercard', 'visa', 'mir', 'mada'],
   countryCode: 'RU',
   currencyCode: 'RUB',
   paymentSummaryItems: [

@@ -11,7 +11,8 @@ export type APayAllowedCardNetworkType =
   | 'idcredit'
   | 'quicpay'
   | 'maestro'
-  | 'mir';
+  | 'mir'
+  | 'mada';
 export type APayPaymentStatusType = number;
 
 export type APayPaymentSummaryItemType = {
